@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="Titulo">
+        <h3>Registro mi DB </h3>
+    </header>
+    <div class="Form">
+        <form action="enviarRegistro.php" method="post">
+            <div>
+                <label for="nombre_usuario">Ingresa nombre completo:</label>
+                <input type="text" name="nombre_usuario" required maxlength="100" placeholder="Ingresa tu nombre">
+                <br><br>
+            </div>
+            <div>
+                <label for="nombre_usuario">Carrera academica:</label>
+                <input type="text" name="carrera" required list="lista-institucion" placeholder="Ingresa tu carrera">
+                <datalist id="lista-institucion">
+                    <option value="Fes Aragon">Facultad de Estudios Superiores Aragon</option>
+                    <option value="Fes Iztacala">Facultad de Estudios Superiores Iztacala</option>
+                    <option value="Fes Acatlan">Facultad de Estudios Superiores Acatlan</option>
+                    <option value="Fes Cuautitlan">Facultad de Estudios Superiores Cuautitlan</option>
+                    <option value="Fes Zaragoza">Facultad de Estudios Superiores Zaragoza</option>
+
+                </datalist>
+
+                <br><br>
+            </div>
+            <div>
+                <label for="no_cuenta">Ingresa numero de cuenta:</label>
+                <input type="number" name="nombre_usuario" maxlength="9" placeholder="Ingresa tu numero de cuenta" required>
+                <br><br>
+            </div>
+            <div>
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" required maxlength="255" placeholder="Ingresa tu direccion">
+                <br><br>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" required maxlength="255" placeholder="Ingresa tu correo">
+                <br><br>
+            </div>
+            <div>
+                <label for="pasword">Pasword:</label>
+                <input type="text" name="pasword" required maxlength="16" placeholder="Ingresa tu contraseña">
+                <br><br>
+            </div>
+            <div>
+                <label for="fecha_registro">Fecha de Registro:</label>
+                <input type="numer" name="fecha_registro" required maxlength="8" placeholder="Ingresa la fecha de Registro">
+                <br><br>
+            </div>
+            <div>
+                <label for="permisos">Permisos:</label>
+                <input type="text" name="email" required maxlength="100" placeholder="Ingresa los permisos">
+                <br><br>
+            </div>
+            <div>
+                <button type="submit" name="submit">Enviar registro</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<a href="index.html">Nuevo Registro</a>
